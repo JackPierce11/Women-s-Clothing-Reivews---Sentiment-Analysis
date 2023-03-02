@@ -3,7 +3,7 @@
 # Project Goals
 The goals of this project are to:
  - **Understand and explore the dataset**, which contains reviews for women's clothing.
- - **Create a Word2Vec language model** based upon the title's and review's left by customers.
+ - **Create a Word2Vec language model** based upon the titles and reviews left by customers.
  - Use this pretrained **Word2Vec model and a LSTM neural network** to see how well we can predict whether a customer left a 5-star rating based off of their review.
 
 # Conclusion
