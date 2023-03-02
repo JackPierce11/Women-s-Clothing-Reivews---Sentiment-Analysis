@@ -9,6 +9,7 @@ The goals of this project are to:
 # Conclusion
 
 ## Data Source
+https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews
 
 ## Notebooks
  - 01_EDA.ipynb: Exploratory data analysis notebook.
@@ -16,16 +17,16 @@ The goals of this project are to:
  - 03_LSTM_Sentiment_Analysis.ipynb: LSTM sentiment analysis model training notebook.
 
 ## Data
- - data/raw_data.csv: Original data file.
- - data/cleaned_data.csv: Cleaned data file created by 01_EDA.ipynb.
- - data/preprocessed_data.npy: Preprocessed vectorized data saved by 02_Word2Vec.ipynb.
+ - data/wcr_original_data.csv: Original data file.
+ - data/wcr_partially_cleaned.csv: Cleaned data file created by 01_EDA.ipynb.
+ - data/wcr_preprocessed.csv: Preprocessed vectorized data saved by 02_Word2Vec.ipynb.
 
 ## Models
- - models/word2vec.model: Word2Vec model saved by 02_Word2Vec.ipynb.
- - models/lstm_model.h5: LSTM sentiment analysis model saved by 03_LSTM.ipynb.
+ - models/wcr_trigrams_300features_5minwords_20context.bin: Word2Vec model saved by 02_Word2Vec.ipynb.
+ - models/LSTM_model_30epochs.h5: LSTM sentiment analysis model saved by 03_LSTM_Sentiment_Analysis.ipynb.
  
 ## How to Use
- - Run 01_EDA.ipynb to perform exploratory data analysis and generate cleaned_data.csv.
- - Run 02_Word2Vec.ipynb to train the Word2Vec model and generate word2vec.model and preprocessed_data.npy.
- - Run 03_LSTM.ipynb to train the LSTM sentiment analysis model and generate lstm_model.h5.
- - To use the trained model for predictions, load the saved model from models/lstm_model.h5 and preprocess input data using the saved Word2Vec model and preprocessed_data.npy.
+ - Run 01_EDA.ipynb to perform exploratory data analysis and generate wcr_partially_cleaned.csv.
+ - Run 02_Word2Vec.ipynb to train the Word2Vec model and generate wcr_trigrams_300features_5minwords_20context.bin and wcr_preprocessed.csv.
+ - Run 03_LSTM_Sentiment_Analysis.ipynb to train the LSTM sentiment analysis model and generate LSTM_model_30epochs.h5.
+ - To use the trained model for predictions, load the saved model from models/LSTM_model_30epochs.h5 and preprocess input data using the saved Word2Vec model and wcr_preprocessed.csv.
