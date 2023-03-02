@@ -10,31 +10,22 @@ The goals of this project are to:
 
 ## Data Source
 
+## Notebooks
+ - 01_EDA.ipynb: Exploratory data analysis notebook.
+ - 02_Word2Vec.ipynb: Word2Vec model training notebook.
+ - 03_LSTM_Sentiment_Analysis.ipynb: LSTM sentiment analysis model training notebook.
 
-## Project Notebooks
-This notebook is part of a series of 3 notebooks on performing sentiment analysis on a dataset of women's clothing reviews.
-1. Women's Clothing Reviews - Sentiment Analysis: EDA **{ADD LINKS}**
-2. Women's Clothing Reviews - Sentiment Analysis: Building Word2Vec Model
-3. **Women's Clothing Reviews - Sentiment Analysis: Building a Sentiment Analysis Model**
+## Data
+ - data/raw_data.csv: Original data file.
+ - data/cleaned_data.csv: Cleaned data file created by 01_EDA.ipynb.
+ - data/preprocessed_data.npy: Preprocessed vectorized data saved by 02_Word2Vec.ipynb.
 
-
-## Requirements
-List any required software and dependencies needed to run the notebooks and scripts.
-
-## Installation
-Step-by-step instructions on how to install the required software and dependencies, if applicable.
-
-Usage
-A brief description of how to use the notebooks and scripts, including any command line arguments and file paths.
-
-Notebooks
-A list of the notebooks in the repository, with a brief description of each notebook's purpose.
-
-Data
-A brief description of the data files used in the project, including their format, size, and any preprocessing steps applied.
-
-Models
-A brief description of the trained models included in the repository, including their performance metrics and any hyperparameters used.
-
-Results
-A summary of the project's results and any conclusions or insights gained from the analysis.
+## Models
+ - models/word2vec.model: Word2Vec model saved by 02_Word2Vec.ipynb.
+ - models/lstm_model.h5: LSTM sentiment analysis model saved by 03_LSTM.ipynb.
+ 
+## How to Use
+ - Run 01_EDA.ipynb to perform exploratory data analysis and generate cleaned_data.csv.
+ - Run 02_Word2Vec.ipynb to train the Word2Vec model and generate word2vec.model and preprocessed_data.npy.
+ - Run 03_LSTM.ipynb to train the LSTM sentiment analysis model and generate lstm_model.h5.
+ - To use the trained model for predictions, load the saved model from models/lstm_model.h5 and preprocess input data using the saved Word2Vec model and preprocessed_data.npy.
