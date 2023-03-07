@@ -14,6 +14,8 @@ The goals of this project are to:
 
 **Evaluation of Results:**  A customer rating of less than 5-stars did not always indicate customer dissatisfaction. The model had significant false positives. Though the dataset was balanced, it did not match the sentiment split of the dataset. The company should focus on understanding why customers leave a positive text review but not give a 5-star rating to improve customer experience.
 
+For the full conclusion, see notebook: 03_LSTM_Sentiment_Analysis.ipynb
+
 ## Data Source
 https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews
 
@@ -29,10 +31,13 @@ https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews
 
 ## Models
  - models/wcr_trigrams_300features_5minwords_20context.bin: Word2Vec model saved by 02_Word2Vec.ipynb.
- - models/LSTM_model_30epochs.h5: LSTM sentiment analysis model saved by 03_LSTM_Sentiment_Analysis.ipynb.
+ - models/model_1.h5: model 1 LSTM sentiment analysis model saved by 03_LSTM_Sentiment_Analysis.ipynb.
+ - models/model_2.h5: model 2 LSTM sentiment analysis model saved by 03_LSTM_Sentiment_Analysis.ipynb.
+ - models/model_3.h5: model 3 LSTM sentiment analysis model saved by 03_LSTM_Sentiment_Analysis.ipynb.
+ 
  
 ## How to Use
  - Run 01_EDA.ipynb to perform exploratory data analysis and generate wcr_partially_cleaned.csv.
  - Run 02_Word2Vec.ipynb to train the Word2Vec model and generate wcr_trigrams_300features_5minwords_20context.bin and wcr_preprocessed.csv.
- - Run 03_LSTM_Sentiment_Analysis.ipynb to train the LSTM sentiment analysis model and generate LSTM_model_30epochs.h5.
- - To use the trained model for predictions, load the saved model from models/LSTM_model_30epochs.h5 and preprocess input data using the saved Word2Vec model and wcr_preprocessed.csv.
+ - Run 03_LSTM_Sentiment_Analysis.ipynb to train the LSTM sentiment analysis model and generate the three models: model_1.h5, model_2.h5, model_3.h5.
+ - To use the trained models for predictions, load the saved models from models/model_1.h5, models/model_2.h5 and models/model_3.h5 and preprocess input data using the saved Word2Vec model and wcr_preprocessed.csv.
