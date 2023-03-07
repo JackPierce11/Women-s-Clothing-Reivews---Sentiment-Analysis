@@ -12,7 +12,7 @@ The goals of this project are to:
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/73466733/223437077-ddde4981-f2d0-441c-a90b-9b0365b3b680.png">
 
-**Evaluation of Results:**  A customer rating of less than 5-stars did not always indicate customer dissatisfaction. The model had significant false positives. Though the dataset was balanced, it did not match the sentiment split of the dataset. The company should focus on understanding why customers leave a positive text review but not give a 5-star rating to improve customer experience.
+**Evaluation of Results:**  A customer rating of less than 5-stars did not always indicate customer dissatisfaction. The model had significant false positives. Though the dataset was balanced, it did not match the sentiment split of the dataset. The company should focus on understanding why customers leave a positive text review but do not give a 5-star rating to improve customer experience.
 
 For the full conclusion, see notebook: 03_LSTM_Sentiment_Analysis.ipynb
 
