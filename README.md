@@ -8,6 +8,12 @@ The goals of this project are to:
 
 # Conclusion
 
+3 models were made with varying complexities, but all containing some form of LSTM layer. It was found that **Model 2 has the highest accuracy score of 0.702**. Here is a table to show the results:
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/73466733/223437077-ddde4981-f2d0-441c-a90b-9b0365b3b680.png">
+
+**Evaluation of Results:**  A customer rating of less than 5-stars did not always indicate customer dissatisfaction. The model had significant false positives. Though the dataset was balanced, it did not match the sentiment split of the dataset. The company should focus on understanding why customers leave a positive text review but not give a 5-star rating to improve customer experience.
+
 ## Data Source
 https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews
 
